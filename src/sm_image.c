@@ -128,6 +128,8 @@ static uint16_t get_lvd_image_type(image_fs_type_t fs_type) {
     return LVD_ATTACH_IMAGE_TYPE_UFS_DOWNLOAD_DATA;
   if (fs_type == IMAGE_FS_PFS)
     return LVD_ATTACH_IMAGE_TYPE_PFS_SAVE_DATA;
+  if (fs_type == IMAGE_FS_EXFAT)
+    return LVD_ATTACH_IMAGE_TYPE_SINGLE_EXFAT;
   return LVD_ATTACH_IMAGE_TYPE_SINGLE;
 }
 
